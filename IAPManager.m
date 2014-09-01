@@ -167,11 +167,11 @@ NSURL *purchasesURL() {
             case SKPaymentTransactionStatePurchased: {
                 [self.purchasedItems addObject:transaction.payment.productIdentifier];
                 newPurchases = YES;
-                [queue finishTransaction:transaction];
+                //[queue finishTransaction:transaction];
                 break;
             }
             case SKPaymentTransactionStateFailed: {
-                [queue finishTransaction:transaction];
+                //[queue finishTransaction:transaction];
                 break;
             }
             case SKPaymentTransactionStatePurchasing: {
